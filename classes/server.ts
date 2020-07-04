@@ -40,6 +40,9 @@ export default class Server{
             // cliente.on('disconnect', () => {
             //     console.log('Cliente desconectado');
             // })
+
+            // Login
+            socket.login(cliente);
         });
     }
 

@@ -17,3 +17,10 @@ export const mensaje = ( cliente: Socket, io: socketIO.Server) => {
     });
 
 }
+
+export const login = ( cliente: Socket) => {
+    cliente.on('configurar-usuario', (payload) => {
+        // console.log('Login: ', payload.nombre);
+        console.log(`Usuario ${payload.nombre} conectado`);
+    })
+}
